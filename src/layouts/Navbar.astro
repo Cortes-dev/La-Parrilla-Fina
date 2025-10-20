@@ -1,0 +1,155 @@
+---
+// Datos del menú de navegación
+const menuItems = [
+  { label: "Home", href: "/" },
+  { label: "Menú", href: "/menu" },
+  { label: "Reservaciones", href: "/reservaciones" },
+  { label: "Contacto", href: "/contacto" },
+];
+
+// Componente para el enlace con efecto subrayado
+const NavLink = (props: any) =>
+  `<a href="${props.href}" class="relative group px-3 py-2 text-sm font-medium">
+    ${props.children}
+    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+  </a>`;
+---
+
+<nav
+  class="bg-gradient-to-r from-amber-900 to-yellow-700 text-white shadow-lg fixed w-full top-0 z-50"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <img
+          src="/icons.svg"
+          alt="Logo Restaurante"
+          class="w-10 h-10 rounded-full border-2 border-white"
+          loading="lazy"
+        />
+        <h1
+          class="font-serif text-2xl font-bold tracking-wide hidden sm:inline"
+        >
+          La Parrilla Fina
+        </h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        {
+          menuItems.map((item) => (
+            <a
+              href={item.href}
+              class="relative group px-3 py-2 text-sm font-medium transition-colors duration-200 group "
+            >
+                <span class="group-hover:animate-pulsing">
+              {item.label}
+                </span>
+              <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300" />
+            </a>
+          ))
+        }
+      </div>
+
+      <!-- Botón menú móvil -->
+      <button
+        id="menu-btn"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        class="md:hidden text-white hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 rounded p-1 transition-colors"
+      >
+        <svg
+          id="open-icon"
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg
+          id="close-icon"
+          class="hidden w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú móvil -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-gradient-to-b from-amber-900 to-yellow-800 transition-all duration-300 ease-in-out"
+  >
+    <div class="px-4 pt-2 pb-3 space-y-1">
+      {
+        menuItems.map((item) => (
+          <a
+            href={item.href}
+            class="block px-3 py-2 rounded-md text-base font-medium hover:bg-amber-800 transition-colors duration-200"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Elementos del DOM
+  const btn = document.getElementById("menu-btn")!;
+  const mobileMenu = document.getElementById("mobile-menu")!;
+  const openIcon = document.getElementById("open-icon")!;
+  const closeIcon = document.getElementById("close-icon")!;
+
+  // Función para alternar menú
+  const toggleMenu = () => {
+    const isOpen = !mobileMenu.classList.contains("hidden");
+
+    mobileMenu.classList.toggle("hidden");
+    openIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+
+    // Actualizar atributo aria-expanded
+    btn.setAttribute("aria-expanded", String(!isOpen));
+  };
+
+  // Event listener
+  btn.addEventListener("click", toggleMenu);
+
+  // Cerrar menú al hacer clic en un enlace
+  const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!mobileMenu.classList.contains("hidden")) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Cerrar menú al redimensionar a desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && !mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.add("hidden");
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+</script>

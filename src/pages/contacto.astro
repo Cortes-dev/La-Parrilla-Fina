@@ -1,0 +1,289 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="pt-24">
+    <!-- Hero de Contacto -->
+    <section class="bg-gradient-to-b from-amber-900 to-yellow-800 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-5xl md:text-6xl font-serif font-bold mb-4">Contáctanos</h1>
+        <p class="text-xl text-amber-100">Estamos aquí para ayudarte</p>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <!-- WhatsApp -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow transform hover:scale-105 duration-300">
+            <div class="text-5xl mb-4">💬</div>
+            <h3 class="text-2xl font-serif font-bold text-green-900 mb-4">WhatsApp</h3>
+            <p class="text-gray-700 mb-6">Respuestas rápidas y atención personalizada</p>
+            <a 
+              href="https://wa.me/573001234567?text=Hola%20La%20Parrilla%20Fina" 
+              target="_blank"
+              class="inline-block px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-all duration-300"
+            >
+              +57 300 123 4567
+            </a>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow transform hover:scale-105 duration-300">
+            <div class="text-5xl mb-4">📞</div>
+            <h3 class="text-2xl font-serif font-bold text-blue-900 mb-4">Teléfono</h3>
+            <p class="text-gray-700 mb-6">Llámanos directamente para reservaciones</p>
+            <a 
+              href="tel:+5715550123"
+              class="inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-all duration-300"
+            >
+              (1) 555 0123
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow transform hover:scale-105 duration-300">
+            <div class="text-5xl mb-4">📧</div>
+            <h3 class="text-2xl font-serif font-bold text-purple-900 mb-4">Email</h3>
+            <p class="text-gray-700 mb-6">Envíanos tus consultas por correo</p>
+            <a 
+              href="mailto:info@laparrillafina.com"
+              class="inline-block px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-all duration-300"
+            >
+              Enviar Email
+            </a>
+          </div>
+        </div>
+
+        <!-- Ubicación y Horarios -->
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <!-- Ubicación -->
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg shadow-lg p-8">
+            <h2 class="text-3xl font-serif font-bold text-amber-900 mb-6 flex items-center gap-3">
+              <span class="text-4xl">📍</span> Ubicación
+            </h2>
+            <p class="text-gray-700 mb-4 text-lg font-semibold">La Parrilla Fina</p>
+            <p class="text-gray-700 mb-6">
+              Cra 45 #123-456<br/>
+              Bogotá, Colombia<br/>
+              Zona Centro Comercial
+            </p>
+            <a 
+              href="https://maps.google.com/?q=La+Parrilla+Fina+Bogota"
+              target="_blank"
+              class="inline-block px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Ver en Google Maps
+            </a>
+
+            <!-- Mapa Embebido -->
+            <div class="mt-8 rounded-lg overflow-hidden shadow-lg h-80">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8487841339744!2d-74.08!3d4.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sRestaurante%20La%20Parrilla%20Fina!5e0!3m2!1ses!2sco!4v1635000000000"
+                style="border:0;" 
+                loading="lazy"
+                class="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Horarios -->
+          <div class="space-y-8">
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg shadow-lg p-8">
+              <h3 class="text-3xl font-serif font-bold text-green-900 mb-6 flex items-center gap-3">
+                <span class="text-4xl">🕐</span> Horarios
+              </h3>
+              <div class="space-y-4">
+                <div class="border-l-4 border-green-600 pl-4">
+                  <p class="font-bold text-gray-800 text-lg">Lunes - Viernes</p>
+                  <p class="text-gray-700">11:00 AM - 11:00 PM</p>
+                </div>
+                <div class="border-l-4 border-green-600 pl-4">
+                  <p class="font-bold text-gray-800 text-lg">Sábados</p>
+                  <p class="text-gray-700">12:00 PM - 12:00 AM</p>
+                </div>
+                <div class="border-l-4 border-green-600 pl-4">
+                  <p class="font-bold text-gray-800 text-lg">Domingos</p>
+                  <p class="text-gray-700">12:00 PM - 10:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Políticas -->
+            <div class="bg-gradient-to-br from-red-50 to-rose-50 rounded-lg shadow-lg p-8">
+              <h3 class="text-3xl font-serif font-bold text-red-900 mb-6 flex items-center gap-3">
+                <span class="text-4xl">⚠️</span> Políticas
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex gap-3">
+                  <span class="text-red-600 font-bold">•</span>
+                  <span>Reservaciones sin costo</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="text-red-600 font-bold">•</span>
+                  <span>Válidas por 15 minutos de la hora acordada</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="text-red-600 font-bold">•</span>
+                  <span>Aceptamos tarjeta y efectivo</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="text-red-600 font-bold">•</span>
+                  <span>Accesible para personas con movilidad reducida</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de Contacto -->
+        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg shadow-lg p-8 mb-16">
+          <h2 class="text-3xl font-serif font-bold text-indigo-900 mb-8 text-center">Envíanos un mensaje</h2>
+          <form id="contactForm" class="max-w-2xl mx-auto space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-bold mb-2">Nombre *</label>
+                <input 
+                  type="text" 
+                  required
+                  class="w-full px-4 py-2 border-2 border-indigo-300 rounded-lg focus:outline-none focus:border-indigo-600 transition"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 font-bold mb-2">Email *</label>
+                <input 
+                  type="email" 
+                  required
+                  class="w-full px-4 py-2 border-2 border-indigo-300 rounded-lg focus:outline-none focus:border-indigo-600 transition"
+                  placeholder="tu@email.com"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-bold mb-2">Teléfono</label>
+              <input 
+                type="tel"
+                class="w-full px-4 py-2 border-2 border-indigo-300 rounded-lg focus:outline-none focus:border-indigo-600 transition"
+                placeholder="Tu teléfono"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-bold mb-2">Asunto *</label>
+              <input 
+                type="text" 
+                required
+                class="w-full px-4 py-2 border-2 border-indigo-300 rounded-lg focus:outline-none focus:border-indigo-600 transition"
+                placeholder="¿Cuál es tu consulta?"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-bold mb-2">Mensaje *</label>
+              <textarea 
+                required
+                class="w-full px-4 py-2 border-2 border-indigo-300 rounded-lg focus:outline-none focus:border-indigo-600 transition resize-none"
+                rows="6"
+                placeholder="Cuéntanos más..."
+              ></textarea>
+            </div>
+            <button 
+              type="submit"
+              class="w-full px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+
+        <!-- FAQ -->
+        <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg shadow-lg p-8">
+          <h2 class="text-3xl font-serif font-bold text-orange-900 mb-8 text-center">Preguntas Frecuentes</h2>
+          
+          <div class="max-w-3xl mx-auto space-y-6">
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Cómo hago una reservación?</h3>
+              <p class="text-gray-700">
+                Puedes hacerlo a través de WhatsApp, llamándonos directamente o usando nuestro formulario de reservaciones en línea. En todos los casos será procesada rápidamente.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Cuál es el tiempo de espera sin reservación?</h3>
+              <p class="text-gray-700">
+                En días de semana puede ser de 15-30 minutos y en fines de semana de 30-60 minutos. Te recomendamos hacer reservación con anticipación.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Comen sin reservación?</h3>
+              <p class="text-gray-700">
+                Sí, aceptamos clientes sin reservación siempre y cuando haya disponibilidad. Sin embargo, la reservación garantiza tu lugar.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Tienen opciones para dietas especiales?</h3>
+              <p class="text-gray-700">
+                Sí, podemos adaptar nuestros platos a diferentes dietas. Solo debes especificarlo en tu reservación o contactarnos directamente.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Hacen delivery o para llevar?</h3>
+              <p class="text-gray-700">
+                Actualmente estamos enfocados en la experiencia de comer en nuestro local. Contáctanos para consultar sobre opciones especiales.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border-l-4 border-orange-500">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">¿Cuentan con estacionamiento?</h3>
+              <p class="text-gray-700">
+                Sí, contamos con un parqueadero seguro para nuestros clientes en la zona del centro comercial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 px-4 bg-gradient-to-r from-amber-900 to-yellow-800 text-white">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="text-4xl font-serif font-bold">¡Te esperamos en La Parrilla Fina!</h2>
+        <p class="text-lg text-amber-100">
+          Ven y experimenta sabores auténticos en un ambiente familiar perfecto
+        </p>
+        <a 
+          href="https://wa.me/573001234567?text=Hola%20La%20Parrilla%20Fina,%20quiero%20visitar%20el%20restaurante" 
+          target="_blank"
+          class="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Reservar Ahora por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('contactForm') as HTMLFormElement;
+    
+    form?.addEventListener('submit', async (e: Event) => {
+      e.preventDefault();
+      
+      const nombre = (form.elements[0] as HTMLInputElement).value;
+      const email = (form.elements[1] as HTMLInputElement).value;
+      const telefono = (form.elements[2] as HTMLInputElement).value;
+      const asunto = (form.elements[3] as HTMLInputElement).value;
+      const mensaje = (form.elements[4] as HTMLTextAreaElement).value;
+      
+      const textoWhatsapp = `Formulario de contacto:\n\nNombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\nAsunto: ${asunto}\nMensaje: ${mensaje}`;
+      
+      const whatsappLink = `https://wa.me/573001234567?text=${encodeURIComponent(textoWhatsapp)}`;
+      
+      window.open(whatsappLink, '_blank');
+      form.reset();
+    });
+  </script>
+</Layout>

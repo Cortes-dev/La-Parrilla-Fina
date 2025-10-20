@@ -1,0 +1,329 @@
+---
+---
+
+<main>
+  <!-- Hero Section con Parallax -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <!-- Fondo con parallax -->
+    <div 
+      class="absolute inset-0 bg-cover bg-center bg-fixed"
+      style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../public/hero.png'); background-attachment: fixed;"
+    ></div>
+
+    <!-- Contenido Hero -->
+    <div class="relative h-full flex flex-col items-center justify-center text-white px-4">
+      <div class="text-center space-y-6 animate-fade-in">
+        <h1 class="text-5xl md:text-7xl font-serif font-bold tracking-wider drop-shadow-lg">
+          La Parrilla Fina
+        </h1>
+        <p class="text-xl md:text-2xl font-light tracking-wide drop-shadow-md">
+          Sabores Auténticos • Ambiente Familiar • Experiencia Inolvidable
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <a 
+            href="#menu" 
+            class="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            Ver Menú
+          </a>
+          <a 
+            href="https://wa.me/573001234567?text=Hola%20La%20Parrilla%20Fina,%20me%20gustaría%20hacer%20una%20reservación" 
+            target="_blank"
+            class="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.364-3.905 6.75-1.905 10.525 1.364 2.52 3.68 4.03 6.262 4.03.503 0 1.007-.05 1.509-.144l.623 3.265 3.324-1.73c.411.27.865.531 1.316.774 3.027 1.52 6.289 1.442 9.315-.238 2.868-1.607 4.849-4.59 5.111-7.98.262-3.39-.955-6.615-3.285-8.81-2.33-2.195-5.707-3.327-9.065-3.068zm0-2.982c4.11 0 7.9 1.668 10.589 4.704 2.689 3.035 3.748 7.02 2.978 10.923-.77 3.903-3.546 7.191-7.262 8.84-3.716 1.648-8.05 1.423-11.545-.621-1.626-.888-3.065-2.146-4.239-3.688l-1.38 7.217 6.36-3.322c2.686 1.313 5.677 1.612 8.567.823 2.89-.789 5.286-2.733 6.708-5.39 1.422-2.657 1.634-5.783.603-8.617-1.03-2.834-3.11-5.104-5.734-6.342-2.624-1.238-5.783-1.268-8.43-.087-2.646 1.181-4.694 3.461-5.657 6.213" />
+            </svg>
+            Reservar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="absolute bottom-8 animate-bounce">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="animate-fade-in-left">
+        <img 
+          src="../../public/restaurante.png" 
+          alt="Restaurante"
+          class="rounded-lg shadow-xl"
+        />
+      </div>
+      <div class="space-y-6 animate-fade-in-right">
+        <h2 class="text-4xl font-serif font-bold text-amber-900">Sobre La Parrilla Fina</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Con más de 15 años de tradición, La Parrilla Fina es el lugar ideal para disfrutar de momentos inolvidables en familia. Nuestro compromiso es ofrecer carnes de la más alta calidad, preparadas con técnicas tradicionales y un toque moderno.
+        </p>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600 font-bold">✓</span>
+            Carnes premium seleccionadas diariamente
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600 font-bold">✓</span>
+            Ambiente familiar y acogedor
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600 font-bold">✓</span>
+            Personal atento y profesional
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600 font-bold">✓</span>
+            Eventos y celebraciones especiales
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menú Preview -->
+  <section id="menu" class="py-20 px-4 bg-gradient-to-b from-amber-50 to-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-serif font-bold text-center text-amber-900 mb-12">Nuestro Menú</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Carnes -->
+        <div class="bg-white rounded-lg shadow-lg p-8 animate-fade-in hover:shadow-xl transition-shadow">
+          <h3 class="text-2xl font-serif font-bold text-amber-900 mb-6">Carnes Premium</h3>
+          <div class="space-y-4">
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Carne Asada</h4>
+                <span class="text-amber-600 font-bold">$18</span>
+              </div>
+              <p class="text-sm text-gray-600">Corte especial con chimichurri casero</p>
+            </div>
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Punta de Anca</h4>
+                <span class="text-amber-600 font-bold">$16</span>
+              </div>
+              <p class="text-sm text-gray-600">Tierna y jugosa, al punto perfecto</p>
+            </div>
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Costillas BBQ</h4>
+                <span class="text-amber-600 font-bold">$19</span>
+              </div>
+              <p class="text-sm text-gray-600">Ahumadas lentamente con salsa BBQ</p>
+            </div>
+            <div class="pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Pechuga a la Parrilla</h4>
+                <span class="text-amber-600 font-bold">$15</span>
+              </div>
+              <p class="text-sm text-gray-600">Jugosa y marinada en especias</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acompañamientos -->
+        <div class="bg-white rounded-lg shadow-lg p-8 animate-fade-in hover:shadow-xl transition-shadow" style="animation-delay: 0.2s">
+          <h3 class="text-2xl font-serif font-bold text-amber-900 mb-6">Acompañamientos</h3>
+          <div class="space-y-4">
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Papas al Horno</h4>
+                <span class="text-amber-600 font-bold">$5</span>
+              </div>
+              <p class="text-sm text-gray-600">Crujientes por fuera, tiernas por dentro</p>
+            </div>
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Ensalada Mixta</h4>
+                <span class="text-amber-600 font-bold">$6</span>
+              </div>
+              <p class="text-sm text-gray-600">Verduras frescas con vinagreta casera</p>
+            </div>
+            <div class="border-b border-amber-200 pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Maíz a la Parrilla</h4>
+                <span class="text-amber-600 font-bold">$4</span>
+              </div>
+              <p class="text-sm text-gray-600">Con mantequilla y condimentos selectos</p>
+            </div>
+            <div class="pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-gray-800">Tabla de Quesos</h4>
+                <span class="text-amber-600 font-bold">$12</span>
+              </div>
+              <p class="text-sm text-gray-600">Selección de quesos importados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a 
+          href="/menu"
+          class="inline-block px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+        >
+          Ver Menú Completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegirnos -->
+  <section class="py-20 px-4 bg-amber-900 text-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-serif font-bold text-center mb-12">¿Por qué elegirnos?</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center animate-fade-in">
+          <div class="text-5xl mb-4">🥩</div>
+          <h3 class="text-xl font-bold mb-3">Calidad Premium</h3>
+          <p class="text-amber-100">Seleccionamos las mejores carnes directamente de proveedores de confianza</p>
+        </div>
+        <div class="text-center animate-fade-in" style="animation-delay: 0.2s">
+          <div class="text-5xl mb-4">👨‍🍳</div>
+          <h3 class="text-xl font-bold mb-3">Maestros Parrilleros</h3>
+          <p class="text-amber-100">Experiencia de más de 20 años en la preparación de carnes</p>
+        </div>
+        <div class="text-center animate-fade-in" style="animation-delay: 0.4s">
+          <div class="text-5xl mb-4">❤️</div>
+          <h3 class="text-xl font-bold mb-3">Con Amor</h3>
+          <p class="text-amber-100">Cada plato es preparado con dedicación y pasión</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería con Parallax -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-serif font-bold text-center text-amber-900 mb-12">Galería</h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="h-64 rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-all transform">
+          <img 
+            src="/costilla.png" 
+            alt="Comida"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-64 rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-all transform">
+          <img 
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" 
+            alt="Ambiente"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="h-64 rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-all transform">
+          <img 
+            src="/pechuga.png" 
+            alt="Platos"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonio con Parallax -->
+  <section 
+    class="relative py-20 px-4 overflow-hidden"
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900747-b8191ffa3c51?w=1200&h=800&fit=crop'); background-attachment: fixed; background-size: cover;"
+  >
+    <div class="max-w-4xl mx-auto text-center text-white space-y-6">
+      <p class="text-2xl font-serif italic drop-shadow-lg">
+        "La Parrilla Fina es nuestro lugar favorito para celebrar en familia. Las carnes son increíbles y el ambiente es perfecto."
+      </p>
+      <div>
+        <p class="font-bold text-lg">María García</p>
+        <p class="text-amber-300">Cliente desde hace 5 años</p>
+      </div>
+      <div class="flex justify-center gap-1">
+        <span class="text-2xl">⭐</span>
+        <span class="text-2xl">⭐</span>
+        <span class="text-2xl">⭐</span>
+        <span class="text-2xl">⭐</span>
+        <span class="text-2xl">⭐</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-20 px-4 bg-gradient-to-r from-amber-900 to-yellow-800 text-white">
+    <div class="max-w-4xl mx-auto text-center space-y-8">
+      <h2 class="text-4xl font-serif font-bold">¿Listo para una experiencia inolvidable?</h2>
+      <p class="text-lg text-amber-100">
+        Únete a cientos de familias que ya disfrutan de La Parrilla Fina
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://wa.me/573001234567?text=Hola%20La%20Parrilla%20Fina,%20quisiera%20información%20sobre%20reservaciones" 
+          target="_blank"
+          class="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Reservar Ahora
+        </a>
+        <a 
+          href="#contacto"
+          class="px-8 py-3 bg-white hover:bg-gray-100 text-amber-900 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-left {
+    animation: fade-in-left 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-right {
+    animation: fade-in-right 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>

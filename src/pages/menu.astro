@@ -1,0 +1,255 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="pt-24">
+    <!-- Hero del Menú -->
+    <section class="bg-gradient-to-b from-amber-900 to-yellow-800 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-5xl md:text-6xl font-serif font-bold mb-4">Nuestro Menú</h1>
+        <p class="text-xl text-amber-100">Descubre nuestras deliciosas opciones</p>
+      </div>
+    </section>
+
+    <!-- Menú Completo -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <!-- Carnes Rojas -->
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 class="text-3xl font-serif font-bold text-amber-900 mb-8 flex items-center gap-3">
+              <span class="text-4xl">🥩</span> Carnes Rojas
+            </h2>
+            <div class="space-y-6">
+              <div class="border-b-2 border-amber-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Carne Asada Especial</h3>
+                    <p class="text-sm text-gray-600 mt-1">Corte selecto con chimichurri casero y verduras</p>
+                  </div>
+                  <span class="text-amber-600 font-bold text-lg whitespace-nowrap ml-2">$22</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-amber-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Punta de Anca</h3>
+                    <p class="text-sm text-gray-600 mt-1">Tierna y jugosa, marinada en especias selectas</p>
+                  </div>
+                  <span class="text-amber-600 font-bold text-lg whitespace-nowrap ml-2">$18</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-amber-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Lomo Fino</h3>
+                    <p class="text-sm text-gray-600 mt-1">El corte más suave y delicado, punto perfecto</p>
+                  </div>
+                  <span class="text-amber-600 font-bold text-lg whitespace-nowrap ml-2">$28</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-amber-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Costilla Asada</h3>
+                    <p class="text-sm text-gray-600 mt-1">Blanda y jugosa con salsa BBQ casera</p>
+                  </div>
+                  <span class="text-amber-600 font-bold text-lg whitespace-nowrap ml-2">$20</span>
+                </div>
+              </div>
+              <div class="pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">T-Bone</h3>
+                    <p class="text-sm text-gray-600 mt-1">Combinación perfecta de carne roja y costilla</p>
+                  </div>
+                  <span class="text-amber-600 font-bold text-lg whitespace-nowrap ml-2">$32</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aves y Pescados -->
+          <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 class="text-3xl font-serif font-bold text-blue-900 mb-8 flex items-center gap-3">
+              <span class="text-4xl">🍗</span> Aves y Pescados
+            </h2>
+            <div class="space-y-6">
+              <div class="border-b-2 border-blue-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Pechuga a la Parrilla</h3>
+                    <p class="text-sm text-gray-600 mt-1">Jugosa y sazonada con especias mediterráneas</p>
+                  </div>
+                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap ml-2">$16</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-blue-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Pollo Entero BBQ</h3>
+                    <p class="text-sm text-gray-600 mt-1">Ahumado lentamente con salsa BBQ casera</p>
+                  </div>
+                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap ml-2">$24</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-blue-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Salmón a la Parrilla</h3>
+                    <p class="text-sm text-gray-600 mt-1">Fresco con limón, tomate y hierbas aromáticas</p>
+                  </div>
+                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap ml-2">$26</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-blue-200 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Tilapia Completa</h3>
+                    <p class="text-sm text-gray-600 mt-1">Entera a la parrilla con verduras al vapor</p>
+                  </div>
+                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap ml-2">$22</span>
+                </div>
+              </div>
+              <div class="pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Camarones al Ajillo</h3>
+                    <p class="text-sm text-gray-600 mt-1">Frescos y tiernos con mantequilla y ajo</p>
+                  </div>
+                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap ml-2">$28</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <!-- Acompañamientos -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 class="text-3xl font-serif font-bold text-green-900 mb-8 flex items-center gap-3">
+              <span class="text-4xl">🥗</span> Acompañamientos
+            </h2>
+            <div class="space-y-4">
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Papas al Horno</h3>
+                  <span class="text-green-600 font-bold">$6</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Ensalada Mixta</h3>
+                  <span class="text-green-600 font-bold">$8</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Maíz a la Parrilla</h3>
+                  <span class="text-green-600 font-bold">$5</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Tabla de Quesos</h3>
+                  <span class="text-green-600 font-bold">$15</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Pan Casero</h3>
+                  <span class="text-green-600 font-bold">$4</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-green-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Yuca Frita</h3>
+                  <span class="text-green-600 font-bold">$7</span>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Sopa de Verduras</h3>
+                  <span class="text-green-600 font-bold">$6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bebidas y Postres -->
+          <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 class="text-3xl font-serif font-bold text-rose-900 mb-8 flex items-center gap-3">
+              <span class="text-4xl">🍰</span> Bebidas y Postres
+            </h2>
+            <div class="space-y-4">
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Limonada Natural</h3>
+                  <span class="text-rose-600 font-bold">$4</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Cerveza Nacional</h3>
+                  <span class="text-rose-600 font-bold">$5</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Refrescos</h3>
+                  <span class="text-rose-600 font-bold">$3</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Vino Tinto (Copa)</h3>
+                  <span class="text-rose-600 font-bold">$8</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Postre Casero</h3>
+                  <span class="text-rose-600 font-bold">$7</span>
+                </div>
+              </div>
+              <div class="border-b-2 border-rose-200 pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Flan Tradicional</h3>
+                  <span class="text-rose-600 font-bold">$6</span>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-gray-800">Café Espresso</h3>
+                  <span class="text-rose-600 font-bold">$3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promociones Especiales -->
+        <div class="bg-gradient-to-r from-amber-600 to-yellow-600 rounded-lg p-8 text-white text-center">
+          <h2 class="text-3xl font-serif font-bold mb-4">🎉 Promociones Especiales</h2>
+          <p class="text-lg mb-4">Martes y Miércoles: 20% de descuento en todas las carnes</p>
+          <p class="text-lg">Viernes a Domingo: Menú para familias (4 personas) - $80</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-4 bg-gradient-to-r from-amber-900 to-yellow-800 text-white">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="text-4xl font-serif font-bold">¿Tienes dudas sobre nuestro menú?</h2>
+        <a 
+          href="https://wa.me/573001234567?text=Hola%20La%20Parrilla%20Fina,%20tengo%20una%20pregunta%20sobre%20el%20menú" 
+          target="_blank"
+          class="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
